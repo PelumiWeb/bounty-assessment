@@ -151,9 +151,12 @@ npm run lint       # eslint
 
 ## Known Limitations
 
-- No persistence/offline cache between launches TanStack Query cache is
+- No persistence/offline cache between launches (TanStack Query cache is
+  in-memory only). Adding `@tanstack/query-async-storage-persister` would be the
+  natural next step.
 - Dark mode isn't implemented, but the token system is structured to make it a
   small change.
+
 
 ## Possible Next Steps
 
