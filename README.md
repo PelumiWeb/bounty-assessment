@@ -131,7 +131,10 @@ npm run lint       # eslint
 
 ## Screenshots
 
-> Add screenshots or a short screen recording here, e.g.
+
+https://github.com/user-attachments/assets/30960ea7-aab4-4c00-ad1c-487df3777100
+
+
 > `docs/list.png`, `docs/details.png`, `docs/search.png`.
 
 | List | Details | Search / Filter |
