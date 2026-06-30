@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "Product Catalogue",
+    "slug": "product-catalogue",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.productcatalogue.app" },
+    "android": { "package": "com.productcatalogue.app" },
+    "web": {}
+  }
+}
