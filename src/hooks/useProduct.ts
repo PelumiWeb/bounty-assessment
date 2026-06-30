@@ -9,9 +9,6 @@ export function useProduct(id: number) {
   return useQuery({
     queryKey: ['products', id],
     queryFn: ({ signal }) => getProduct(id, signal),
-    // Seed from the list cache so the details screen paints instantly,
-    // then revalidates in the background. Falls back to a network fetch
-    // if the product was opened via a deep link.
     initialData: () =>
       queryClient.getQueryData<Product[]>(productsQueryKey)?.find((product) => product.id === id),
   });

@@ -7,10 +7,6 @@ export interface ProductFilters {
   category: string;
 }
 
-/**
- * Pure, side-effect-free filtering so it is trivially unit-testable and can run
- * inside a useMemo without re-fetching. Search matches the title only, per spec.
- */
 export function filterProducts(products: Product[], filters: ProductFilters): Product[] {
   const query = filters.query.trim().toLowerCase();
 
@@ -22,7 +18,6 @@ export function filterProducts(products: Product[], filters: ProductFilters): Pr
   });
 }
 
-/** Derives the category tab list from the loaded products (single source of truth). */
 export function getCategories(products: Product[]): string[] {
   const unique = Array.from(new Set(products.map((product) => product.category)));
   return [ALL_CATEGORIES, ...unique.sort()];

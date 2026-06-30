@@ -44,7 +44,6 @@ function ProductCardComponent({ product, onPress }: ProductCardProps) {
   );
 }
 
-// Memoised: list rows only re-render when their product reference changes.
 export const ProductCard = memo(ProductCardComponent);
 
 const styles = StyleSheet.create({

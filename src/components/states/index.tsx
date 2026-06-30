@@ -46,7 +46,6 @@ export function EmptyState({ title = 'No products found', message }: EmptyStateP
   );
 }
 
-/** Lightweight skeleton placeholder shown during the initial product fetch. */
 export function ListSkeleton({ count = 6 }: { count?: number }) {
   return (
     <View style={styles.skeletonWrap}>

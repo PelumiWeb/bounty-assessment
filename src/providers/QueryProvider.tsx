@@ -14,7 +14,6 @@ function createQueryClient() {
 }
 
 export function QueryProvider({ children }: { children: ReactNode }) {
-  // Lazily created once and kept stable across re-renders.
   const [queryClient] = useState(createQueryClient);
   return <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>;
 }

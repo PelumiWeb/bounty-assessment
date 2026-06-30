@@ -1,6 +1,5 @@
 const BASE_URL = 'https://fakestoreapi.com';
 
-/** Normalised error so the UI never has to inspect raw fetch/network failures. */
 export class ApiError extends Error {
   constructor(
     message: string,
