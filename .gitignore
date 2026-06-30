@@ -7,5 +7,4 @@ web-build/
 coverage/
 .env*.local
 *.orig.*
-ios/
-android/
+
